@@ -1,12 +1,7 @@
 import bcrypt from 'bcrypt';
 import mongoose from 'mongoose';
 
-import type {
-  IUserMethods,
-  UserModel,
-  IUser,
-  IUserSchema,
-} from './@types/user';
+import type { IUserMethods, UserModel, IUser, IUserSchema } from './@types';
 
 import config from '@/constants';
 import metadata from '@/constants/metadata';

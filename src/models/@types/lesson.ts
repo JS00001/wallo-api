@@ -20,6 +20,8 @@ export interface ILesson {
   name: string;
   /** The description of the lesson */
   description: string;
+  /** The order of the lesson in the course, will sort by this when querying */
+  order: number;
 
   /** LESSON CONTENT */
   /** The content of the lesson */
