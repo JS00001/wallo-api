@@ -14,6 +14,8 @@ export interface ILesson {
   /** SYSTEM DATA */
   /** The id of the lesson */
   _id: Types.ObjectId;
+  /** The course that the lesson belongs to */
+  course: Types.ObjectId;
   /** The name of the lesson */
   name: string;
   /** The description of the lesson */

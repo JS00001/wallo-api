@@ -89,6 +89,12 @@ export interface ISanitizedUser {
   lives: number;
 
   /** METADATA */
+  /** The date that the user last completed a streak */
+  lastStreakAt: Date;
+  /** The date the user got their lives refilled at */
+  lastLivesAt: Date;
+  /** The date the user was last online (Last time they hit the API) */
+  lastOnlineAt: Date;
   /** The date the user was created */
   createdAt: Date;
   /** The date the user was last updated */
