@@ -8,7 +8,7 @@
     "format:fix": "prettier --write .",
     "format:check": "prettier --check .",
     "build": "tsc --project tsconfig.json && tscpaths -p tsconfig.json -s src -o dist",
-    "dev": "cross-env ENV_FILE=./config/.env.dev ts-node-dev --files -r tsconfig-paths/register src/index.ts ",
+    "dev": "cross-env ENV_FILE=./config/.env.dev ts-node-dev --files -r tsconfig-paths/register ./src/index.ts ",
     "start:dev": "cross-env ENV_FILE=./config/.env.dev node .",
     "start:prod": "cross-env ENV_FILE=./config/.env.prod node ."
   },

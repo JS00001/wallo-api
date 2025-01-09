@@ -138,3 +138,5 @@ dist
 # environment vars
 config/.env.dev
 config/.env.prod
+
+.yarn
