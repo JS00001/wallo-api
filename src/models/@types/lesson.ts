@@ -32,10 +32,13 @@ export interface ILesson {
     question: string;
     /** The type of question */
     type: QuestionType;
-    /** The possible answers */
-    answers: string[];
-    /** The correct answers */
-    correctAnswers: string[];
+    /** The possible answers and whether they are correct */
+    answers: {
+      /** The answer */
+      answer: string;
+      /** Whether the answer is correct */
+      correct: boolean;
+    };
   }[];
 
   /** METADATA */

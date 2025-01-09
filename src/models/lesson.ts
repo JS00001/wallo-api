@@ -16,9 +16,13 @@ const lessonSchema = new mongoose.Schema<ILesson>(
     questions: [
       {
         question: { type: String, required: true },
-        answers: { type: [String], required: true },
-        correctAnswers: { type: [String], required: true },
         type: { type: String, enum: QuestionType, required: true },
+        answers: [
+          {
+            answer: { type: String, required: true },
+            correct: { type: Boolean, required: true },
+          },
+        ],
       },
     ],
   },
