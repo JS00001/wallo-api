@@ -1,5 +1,6 @@
 [
   {
+    "_id": "678403fadd4c11a5548ce4ae",
     "course": "6783f6ef3076576cbd3bb4ce",
     "order": 1,
     "name": "Why Save Money?",
@@ -12,6 +13,7 @@
     "questions": []
   },
   {
+    "_id": "678403fadd4c11a5548ce4b0",
     "course": "6783f6ef3076576cbd3bb4ce",
     "order": 2,
     "name": "Setting Goals",
@@ -24,6 +26,7 @@
     "questions": []
   },
   {
+    "_id": "678403fadd4c11a5548ce4b2",
     "course": "6783f6ef3076576cbd3bb4ce",
     "order": 3,
     "name": "Savings Accounts",
@@ -36,6 +39,7 @@
     "questions": []
   },
   {
+    "_id": "678403fadd4c11a5548ce4b4",
     "course": "6783f6ef3076576cbd3bb4ce",
     "order": 4,
     "name": "Automating Savings",
@@ -48,6 +52,7 @@
     "questions": []
   },
   {
+    "_id": "678403fadd4c11a5548ce4b6",
     "course": "6783f6ef3076576cbd3bb4ce",
     "order": 5,
     "name": "Cutting Expenses",
@@ -60,6 +65,7 @@
     "questions": []
   },
   {
+    "_id": "678403fadd4c11a5548ce4b8",
     "course": "6783f6ef3076576cbd3bb4ce",
     "order": 6,
     "name": "Finding Extra Income",
@@ -72,6 +78,7 @@
     "questions": []
   },
   {
+    "_id": "678403fadd4c11a5548ce4ba",
     "course": "6783f6ef3076576cbd3bb4ce",
     "order": 7,
     "name": "Emergency Funds",
@@ -84,6 +91,7 @@
     "questions": []
   },
   {
+    "_id": "678403fadd4c11a5548ce4bc",
     "course": "6783f6ef3076576cbd3bb4ce",
     "order": 8,
     "name": "Long-Term Savings",

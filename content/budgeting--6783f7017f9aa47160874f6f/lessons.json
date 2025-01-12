@@ -1,5 +1,6 @@
 [
   {
+    "_id": "678403f8dd4c11a5548ce436",
     "course": "6783f7017f9aa47160874f6f",
     "order": 1,
     "name": "Budgeting Basics",
@@ -12,6 +13,7 @@
     "questions": []
   },
   {
+    "_id": "678403f8dd4c11a5548ce438",
     "course": "6783f7017f9aa47160874f6f",
     "order": 2,
     "name": "Tracking Expenses",
@@ -24,6 +26,7 @@
     "questions": []
   },
   {
+    "_id": "678403f8dd4c11a5548ce43a",
     "course": "6783f7017f9aa47160874f6f",
     "order": 3,
     "name": "Fixed vs. Variable Costs",
@@ -36,6 +39,7 @@
     "questions": []
   },
   {
+    "_id": "678403f8dd4c11a5548ce43c",
     "course": "6783f7017f9aa47160874f6f",
     "order": 4,
     "name": "Setting Limits",
@@ -48,6 +52,7 @@
     "questions": []
   },
   {
+    "_id": "678403f8dd4c11a5548ce43e",
     "course": "6783f7017f9aa47160874f6f",
     "order": 5,
     "name": "Adjusting Budgets",
@@ -60,6 +65,7 @@
     "questions": []
   },
   {
+    "_id": "678403f8dd4c11a5548ce440",
     "course": "6783f7017f9aa47160874f6f",
     "order": 6,
     "name": "Budgeting Tools",
@@ -72,6 +78,7 @@
     "questions": []
   },
   {
+    "_id": "678403f8dd4c11a5548ce442",
     "course": "6783f7017f9aa47160874f6f",
     "order": 7,
     "name": "Budgeting Goals",
@@ -84,6 +91,7 @@
     "questions": []
   },
   {
+    "_id": "678403f8dd4c11a5548ce444",
     "course": "6783f7017f9aa47160874f6f",
     "order": 8,
     "name": "Sticking to it",

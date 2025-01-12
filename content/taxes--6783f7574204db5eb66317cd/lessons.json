@@ -1,5 +1,6 @@
 [
   {
+    "_id": "678403fadd4c11a5548ce4c0",
     "course": "6783f7574204db5eb66317cd",
     "order": 1,
     "name": "Tax Basics",
@@ -12,6 +13,7 @@
     "questions": []
   },
   {
+    "_id": "678403fadd4c11a5548ce4c2",
     "course": "6783f7574204db5eb66317cd",
     "order": 2,
     "name": "Refunds Explained",
@@ -24,6 +26,7 @@
     "questions": []
   },
   {
+    "_id": "678403fadd4c11a5548ce4c4",
     "course": "6783f7574204db5eb66317cd",
     "order": 3,
     "name": "File Your Taxes",
@@ -36,6 +39,7 @@
     "questions": []
   },
   {
+    "_id": "678403fadd4c11a5548ce4c6",
     "course": "6783f7574204db5eb66317cd",
     "order": 4,
     "name": "Deductions vs. Credits",
@@ -48,6 +52,7 @@
     "questions": []
   },
   {
+    "_id": "678403fadd4c11a5548ce4c8",
     "course": "6783f7574204db5eb66317cd",
     "order": 5,
     "name": "Common Mistakes",
@@ -60,6 +65,7 @@
     "questions": []
   },
   {
+    "_id": "678403fadd4c11a5548ce4ca",
     "course": "6783f7574204db5eb66317cd",
     "order": 6,
     "name": "Tax Planning",
@@ -72,6 +78,7 @@
     "questions": []
   },
   {
+    "_id": "678403fadd4c11a5548ce4cc",
     "course": "6783f7574204db5eb66317cd",
     "order": 7,
     "name": "Self-Employed Taxes",
@@ -84,6 +91,7 @@
     "questions": []
   },
   {
+    "_id": "678403fadd4c11a5548ce4ce",
     "course": "6783f7574204db5eb66317cd",
     "order": 8,
     "name": "Keeping Records",

@@ -1,5 +1,6 @@
 [
   {
+    "_id": "678403f8dd4c11a5548ce45a",
     "course": "6783f7667f288e8d2ae82499",
     "order": 1,
     "name": "Introduction",
@@ -12,6 +13,7 @@
     "questions": []
   },
   {
+    "_id": "678403f8dd4c11a5548ce45c",
     "course": "6783f7667f288e8d2ae82499",
     "order": 2,
     "name": "Health Insurance",
@@ -24,6 +26,7 @@
     "questions": []
   },
   {
+    "_id": "678403f8dd4c11a5548ce45e",
     "course": "6783f7667f288e8d2ae82499",
     "order": 3,
     "name": "Auto Insurance",
@@ -36,6 +39,7 @@
     "questions": []
   },
   {
+    "_id": "678403f8dd4c11a5548ce460",
     "course": "6783f7667f288e8d2ae82499",
     "order": 4,
     "name": "Home Insurance",
@@ -48,6 +52,7 @@
     "questions": []
   },
   {
+    "_id": "678403f8dd4c11a5548ce462",
     "course": "6783f7667f288e8d2ae82499",
     "order": 5,
     "name": "Life Insurance",
@@ -60,6 +65,7 @@
     "questions": []
   },
   {
+    "_id": "678403f8dd4c11a5548ce464",
     "course": "6783f7667f288e8d2ae82499",
     "order": 6,
     "name": "Disability Insurance",
@@ -72,6 +78,7 @@
     "questions": []
   },
   {
+    "_id": "678403f8dd4c11a5548ce466",
     "course": "6783f7667f288e8d2ae82499",
     "order": 7,
     "name": "Choosing Insurance",
@@ -84,6 +91,7 @@
     "questions": []
   },
   {
+    "_id": "678403f9dd4c11a5548ce468",
     "course": "6783f7667f288e8d2ae82499",
     "order": 8,
     "name": "Claims Process",
@@ -96,6 +104,7 @@
     "questions": []
   },
   {
+    "_id": "678403f9dd4c11a5548ce46a",
     "course": "6783f7667f288e8d2ae82499",
     "order": 9,
     "name": "Reviewing Policies",

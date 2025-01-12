@@ -1,5 +1,6 @@
 [
   {
+    "_id": "678403f9dd4c11a5548ce484",
     "course": "6783f7144f750db3041d452e",
     "order": 1,
     "name": "Understanding Debt",
@@ -12,6 +13,7 @@
     "questions": []
   },
   {
+    "_id": "678403f9dd4c11a5548ce486",
     "course": "6783f7144f750db3041d452e",
     "order": 2,
     "name": "Prioritizing Debt",
@@ -24,6 +26,7 @@
     "questions": []
   },
   {
+    "_id": "678403f9dd4c11a5548ce488",
     "course": "6783f7144f750db3041d452e",
     "order": 3,
     "name": "Interest Rates",
@@ -36,6 +39,7 @@
     "questions": []
   },
   {
+    "_id": "678403f9dd4c11a5548ce48a",
     "course": "6783f7144f750db3041d452e",
     "order": 4,
     "name": "Minimum Payments",
@@ -48,6 +52,7 @@
     "questions": []
   },
   {
+    "_id": "678403f9dd4c11a5548ce48c",
     "course": "6783f7144f750db3041d452e",
     "order": 5,
     "name": "Repayment Plans",
@@ -60,6 +65,7 @@
     "questions": []
   },
   {
+    "_id": "678403f9dd4c11a5548ce48e",
     "course": "6783f7144f750db3041d452e",
     "order": 6,
     "name": "Debt Consolidation",
@@ -72,6 +78,7 @@
     "questions": []
   },
   {
+    "_id": "678403f9dd4c11a5548ce490",
     "course": "6783f7144f750db3041d452e",
     "order": 7,
     "name": "Negotiating Debt",
@@ -84,6 +91,7 @@
     "questions": []
   },
   {
+    "_id": "678403f9dd4c11a5548ce492",
     "course": "6783f7144f750db3041d452e",
     "order": 8,
     "name": "Avoiding New Debt",
@@ -96,6 +104,7 @@
     "questions": []
   },
   {
+    "_id": "678403f9dd4c11a5548ce494",
     "course": "6783f7144f750db3041d452e",
     "order": 9,
     "name": "Debt's Impact on Credit",
@@ -108,6 +117,7 @@
     "questions": []
   },
   {
+    "_id": "678403f9dd4c11a5548ce496",
     "course": "6783f7144f750db3041d452e",
     "order": 10,
     "name": "Seeking Help",
