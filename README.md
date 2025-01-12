@@ -6,6 +6,8 @@
 yarn install
 ```
 
+2. Create a `config/.env.dev` and `config/.env.prod` file in the root directory. These files should match the entries of the `config/.env.schema` file.
+
 ### Running the application
 
 1. Run the following command to start the application in development mode:
@@ -19,7 +21,7 @@ yarn dev
 
 ### Creating new course content
 
-1. Run the following command to create a new course.
+Run the following command to create a new course.
 
 ```bash
 yarn create-course
@@ -32,3 +34,20 @@ allows for an array of strings. These strings are relative paths to the markdown
 
 > [!NOTE]
 > The course will NOT be published to the database/users until you run the `yarn publish-courses:dev/prod` command. You can read more about this below.
+
+### Publishing courses to users
+
+Run one of the two following commands (depending on your environment) to publish the courses to the database/users.
+
+```bash
+yarn publish-courses:dev
+```
+
+```bash
+yarn publish-courses:prod
+```
+
+This will create the documents for courses and lessons if they do not already exist in the database. If they do exist, the documents will be updated with the new course data.
+
+> [!WARNING]
+> Do NOT change the `_id` of a course or lesson once it exists in the database. This can cause data loss and other issues. Similarly, do NOT change the folder name of a course (only the ID part of the folder name) after it has been published to the database.
