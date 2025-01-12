@@ -6,6 +6,8 @@ import { HydratedDocument, Types } from 'mongoose';
 export interface ICourse {
   /** The id of the course */
   _id: Types.ObjectId;
+  /** Whether the course is published or not */
+  published: boolean;
   /** The name of the course */
   name: string;
   /** The description of the course */

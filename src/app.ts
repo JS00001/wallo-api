@@ -14,6 +14,9 @@ import cors from 'cors';
 import helmet from 'helmet';
 import express, { Request } from 'express';
 
+import authRouter from '@/routes/auth';
+import contentRouter from '@/routes/content';
+
 import trustedProxies from '@/constants/proxies';
 import loggingMiddleware from '@/middleware/logging';
 import { APIError, ErrorHandler } from '@/lib/error';
@@ -32,6 +35,9 @@ app.use(express.urlencoded({ extended: true }));
 app.get('/', (_, res) => {
   res.status(200).json({ message: 'API is running' });
 });
+
+app.use('/api/v1/auth', authRouter);
+app.use('/api/v1/content', contentRouter);
 
 // Catch all 404 errors
 app.use((req: Request, res: express.Response) => {

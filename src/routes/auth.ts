@@ -20,3 +20,5 @@ authRouter.post(
   rateLimit(rateLimits.login.requests, rateLimits.login.timeWindowMs),
   authController.postGoogle,
 );
+
+export default authRouter;
