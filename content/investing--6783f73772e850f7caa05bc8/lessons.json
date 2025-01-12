@@ -1,0 +1,122 @@
+[
+  {
+    "course": "6783f73772e850f7caa05bc8",
+    "order": 1,
+    "name": "Why Invest?",
+    "description": "Benefits of investing",
+    "content": [
+      "lesson-1-content-1.md",
+      "lesson-1-content-2.md",
+      "lesson-1-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f73772e850f7caa05bc8",
+    "order": 2,
+    "name": "Investment Types",
+    "description": "Stocks, bonds, and more",
+    "content": [
+      "lesson-2-content-1.md",
+      "lesson-2-content-2.md",
+      "lesson-2-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f73772e850f7caa05bc8",
+    "order": 3,
+    "name": "Risk and Return",
+    "description": "Balancing risk and reward",
+    "content": [
+      "lesson-3-content-1.md",
+      "lesson-3-content-2.md",
+      "lesson-3-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f73772e850f7caa05bc8",
+    "order": 4,
+    "name": "Diversification",
+    "description": "Spreading out your investments",
+    "content": [
+      "lesson-4-content-1.md",
+      "lesson-4-content-2.md",
+      "lesson-4-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f73772e850f7caa05bc8",
+    "order": 5,
+    "name": "Investment Accounts",
+    "description": "Types of investment accounts",
+    "content": [
+      "lesson-5-content-1.md",
+      "lesson-5-content-2.md",
+      "lesson-5-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f73772e850f7caa05bc8",
+    "order": 6,
+    "name": "Starting Small",
+    "description": "Beginning with small investments",
+    "content": [
+      "lesson-6-content-1.md",
+      "lesson-6-content-2.md",
+      "lesson-6-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f73772e850f7caa05bc8",
+    "order": 7,
+    "name": "Compound Interest",
+    "description": "The power of compound interest",
+    "content": [
+      "lesson-7-content-1.md",
+      "lesson-7-content-2.md",
+      "lesson-7-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f73772e850f7caa05bc8",
+    "order": 8,
+    "name": "Market Trends",
+    "description": "Understanding market trends",
+    "content": [
+      "lesson-8-content-1.md",
+      "lesson-8-content-2.md",
+      "lesson-8-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f73772e850f7caa05bc8",
+    "order": 9,
+    "name": "Long-Term Strategies",
+    "description": "Benefits of holding investments",
+    "content": [
+      "lesson-9-content-1.md",
+      "lesson-9-content-2.md",
+      "lesson-9-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f73772e850f7caa05bc8",
+    "order": 10,
+    "name": "Seeking Advice",
+    "description": "When to consult a financial advisor",
+    "content": [
+      "lesson-10-content-1.md",
+      "lesson-10-content-2.md",
+      "lesson-10-content-3.md"
+    ],
+    "questions": []
+  }
+]

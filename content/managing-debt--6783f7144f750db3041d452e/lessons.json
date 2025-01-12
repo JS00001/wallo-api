@@ -1,0 +1,122 @@
+[
+  {
+    "course": "6783f7144f750db3041d452e",
+    "order": 1,
+    "name": "Understanding Debt",
+    "description": "Types of debt explained",
+    "content": [
+      "lesson-1-content-1.md",
+      "lesson-1-content-2.md",
+      "lesson-1-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7144f750db3041d452e",
+    "order": 2,
+    "name": "Prioritizing Debt",
+    "description": "Choosing which debts to pay first",
+    "content": [
+      "lesson-2-content-1.md",
+      "lesson-2-content-2.md",
+      "lesson-2-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7144f750db3041d452e",
+    "order": 3,
+    "name": "Interest Rates",
+    "description": "How interest rates affect debt",
+    "content": [
+      "lesson-3-content-1.md",
+      "lesson-3-content-2.md",
+      "lesson-3-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7144f750db3041d452e",
+    "order": 4,
+    "name": "Minimum Payments",
+    "description": "Risks of paying the minimum",
+    "content": [
+      "lesson-4-content-1.md",
+      "lesson-4-content-2.md",
+      "lesson-4-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7144f750db3041d452e",
+    "order": 5,
+    "name": "Repayment Plans",
+    "description": "Strategies for paying off debt",
+    "content": [
+      "lesson-5-content-1.md",
+      "lesson-5-content-2.md",
+      "lesson-5-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7144f750db3041d452e",
+    "order": 6,
+    "name": "Debt Consolidation",
+    "description": "Combining debts into one payment",
+    "content": [
+      "lesson-6-content-1.md",
+      "lesson-6-content-2.md",
+      "lesson-6-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7144f750db3041d452e",
+    "order": 7,
+    "name": "Negotiating Debt",
+    "description": "Lowering payments and interest rates",
+    "content": [
+      "lesson-7-content-1.md",
+      "lesson-7-content-2.md",
+      "lesson-7-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7144f750db3041d452e",
+    "order": 8,
+    "name": "Avoiding New Debt",
+    "description": "Preventing future debt",
+    "content": [
+      "lesson-8-content-1.md",
+      "lesson-8-content-2.md",
+      "lesson-8-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7144f750db3041d452e",
+    "order": 9,
+    "name": "Debt's Impact on Credit",
+    "description": "How debt affects credit scores",
+    "content": [
+      "lesson-9-content-1.md",
+      "lesson-9-content-2.md",
+      "lesson-9-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7144f750db3041d452e",
+    "order": 10,
+    "name": "Seeking Help",
+    "description": "When to consider financial advice",
+    "content": [
+      "lesson-10-content-1.md",
+      "lesson-10-content-2.md",
+      "lesson-10-content-3.md"
+    ],
+    "questions": []
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "course": "6783f7017f9aa47160874f6f",
+    "order": 1,
+    "name": "Budgeting Basics",
+    "description": "Introduction to budgeting",
+    "content": [
+      "lesson-1-content-1.md",
+      "lesson-1-content-2.md",
+      "lesson-1-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7017f9aa47160874f6f",
+    "order": 2,
+    "name": "Tracking Expenses",
+    "description": "Monitoring spending habits",
+    "content": [
+      "lesson-2-content-1.md",
+      "lesson-2-content-2.md",
+      "lesson-2-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7017f9aa47160874f6f",
+    "order": 3,
+    "name": "Fixed vs. Variable Costs",
+    "description": "Differentiating expense types",
+    "content": [
+      "lesson-3-content-1.md",
+      "lesson-3-content-2.md",
+      "lesson-3-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7017f9aa47160874f6f",
+    "order": 4,
+    "name": "Setting Limits",
+    "description": "Creating spending boundaries",
+    "content": [
+      "lesson-4-content-1.md",
+      "lesson-4-content-2.md",
+      "lesson-4-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7017f9aa47160874f6f",
+    "order": 5,
+    "name": "Adjusting Budgets",
+    "description": "Modifying budget as needed",
+    "content": [
+      "lesson-5-content-1.md",
+      "lesson-5-content-2.md",
+      "lesson-5-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7017f9aa47160874f6f",
+    "order": 6,
+    "name": "Budgeting Tools",
+    "description": "Utilizing apps and tools",
+    "content": [
+      "lesson-6-content-1.md",
+      "lesson-6-content-2.md",
+      "lesson-6-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7017f9aa47160874f6f",
+    "order": 7,
+    "name": "Budgeting Goals",
+    "description": "Aligning budget with financial goals",
+    "content": [
+      "lesson-7-content-1.md",
+      "lesson-7-content-2.md",
+      "lesson-7-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7017f9aa47160874f6f",
+    "order": 8,
+    "name": "Sticking to it",
+    "description": "Staying committed to a budget",
+    "content": [
+      "lesson-8-content-1.md",
+      "lesson-8-content-2.md",
+      "lesson-8-content-3.md"
+    ],
+    "questions": []
+  }
+]

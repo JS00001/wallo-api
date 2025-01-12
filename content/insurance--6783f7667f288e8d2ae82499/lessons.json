@@ -1,0 +1,110 @@
+[
+  {
+    "course": "6783f7667f288e8d2ae82499",
+    "order": 1,
+    "name": "Introduction",
+    "description": "What is insurance?",
+    "content": [
+      "lesson-1-content-1.md",
+      "lesson-1-content-2.md",
+      "lesson-1-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7667f288e8d2ae82499",
+    "order": 2,
+    "name": "Health Insurance",
+    "description": "What is health insurance?",
+    "content": [
+      "lesson-2-content-1.md",
+      "lesson-2-content-2.md",
+      "lesson-2-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7667f288e8d2ae82499",
+    "order": 3,
+    "name": "Auto Insurance",
+    "description": "What is auto insurance?",
+    "content": [
+      "lesson-3-content-1.md",
+      "lesson-3-content-2.md",
+      "lesson-3-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7667f288e8d2ae82499",
+    "order": 4,
+    "name": "Home Insurance",
+    "description": "What is home insurance?",
+    "content": [
+      "lesson-4-content-1.md",
+      "lesson-4-content-2.md",
+      "lesson-4-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7667f288e8d2ae82499",
+    "order": 5,
+    "name": "Life Insurance",
+    "description": "What is life insurance?",
+    "content": [
+      "lesson-5-content-1.md",
+      "lesson-5-content-2.md",
+      "lesson-5-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7667f288e8d2ae82499",
+    "order": 6,
+    "name": "Disability Insurance",
+    "description": "What is disability insurance?",
+    "content": [
+      "lesson-6-content-1.md",
+      "lesson-6-content-2.md",
+      "lesson-6-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7667f288e8d2ae82499",
+    "order": 7,
+    "name": "Choosing Insurance",
+    "description": "Picking the right policy.",
+    "content": [
+      "lesson-7-content-1.md",
+      "lesson-7-content-2.md",
+      "lesson-7-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7667f288e8d2ae82499",
+    "order": 8,
+    "name": "Claims Process",
+    "description": "Filing an insurance claim.",
+    "content": [
+      "lesson-8-content-1.md",
+      "lesson-8-content-2.md",
+      "lesson-8-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7667f288e8d2ae82499",
+    "order": 9,
+    "name": "Reviewing Policies",
+    "description": "Evaluating your insurance.",
+    "content": [
+      "lesson-9-content-1.md",
+      "lesson-9-content-2.md",
+      "lesson-9-content-3.md"
+    ],
+    "questions": []
+  }
+]

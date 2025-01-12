@@ -1,0 +1,98 @@
+[
+  {
+    "course": "6783f6ef3076576cbd3bb4ce",
+    "order": 1,
+    "name": "Why Save Money?",
+    "description": "Importance of saving money",
+    "content": [
+      "lesson-1-content-1.md",
+      "lesson-1-content-2.md",
+      "lesson-1-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f6ef3076576cbd3bb4ce",
+    "order": 2,
+    "name": "Setting Goals",
+    "description": "How to set financial goals",
+    "content": [
+      "lesson-2-content-1.md",
+      "lesson-2-content-2.md",
+      "lesson-2-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f6ef3076576cbd3bb4ce",
+    "order": 3,
+    "name": "Savings Accounts",
+    "description": "Types of savings accounts",
+    "content": [
+      "lesson-3-content-1.md",
+      "lesson-3-content-2.md",
+      "lesson-3-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f6ef3076576cbd3bb4ce",
+    "order": 4,
+    "name": "Automating Savings",
+    "description": "Simplify the saving process",
+    "content": [
+      "lesson-4-content-1.md",
+      "lesson-4-content-2.md",
+      "lesson-4-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f6ef3076576cbd3bb4ce",
+    "order": 5,
+    "name": "Cutting Expenses",
+    "description": "Reduce spending to save more",
+    "content": [
+      "lesson-5-content-1.md",
+      "lesson-5-content-2.md",
+      "lesson-5-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f6ef3076576cbd3bb4ce",
+    "order": 6,
+    "name": "Finding Extra Income",
+    "description": "Ways to earn more money",
+    "content": [
+      "lesson-6-content-1.md",
+      "lesson-6-content-2.md",
+      "lesson-6-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f6ef3076576cbd3bb4ce",
+    "order": 7,
+    "name": "Emergency Funds",
+    "description": "Building a financial safety net",
+    "content": [
+      "lesson-7-content-1.md",
+      "lesson-7-content-2.md",
+      "lesson-7-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f6ef3076576cbd3bb4ce",
+    "order": 8,
+    "name": "Long-Term Savings",
+    "description": "Planning for future needs",
+    "content": [
+      "lesson-8-content-1.md",
+      "lesson-8-content-2.md",
+      "lesson-8-content-3.md"
+    ],
+    "questions": []
+  }
+]

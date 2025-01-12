@@ -1,0 +1,110 @@
+[
+  {
+    "course": "6783f748c83413887c4449cb",
+    "order": 1,
+    "name": "Setting Goals",
+    "description": "Setting goals for retirement",
+    "content": [
+      "lesson-1-content-1.md",
+      "lesson-1-content-2.md",
+      "lesson-1-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f748c83413887c4449cb",
+    "order": 2,
+    "name": "Saving Early",
+    "description": "Importance of starting early",
+    "content": [
+      "lesson-2-content-1.md",
+      "lesson-2-content-2.md",
+      "lesson-2-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f748c83413887c4449cb",
+    "order": 3,
+    "name": "Retirement Accounts",
+    "description": "401(k), IRA, and others",
+    "content": [
+      "lesson-3-content-1.md",
+      "lesson-3-content-2.md",
+      "lesson-3-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f748c83413887c4449cb",
+    "order": 4,
+    "name": "Employer Contributions",
+    "description": "Leveraging employer benefits",
+    "content": [
+      "lesson-4-content-1.md",
+      "lesson-4-content-2.md",
+      "lesson-4-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f748c83413887c4449cb",
+    "order": 5,
+    "name": "Estimating Needs",
+    "description": "Calculating retirement expenses",
+    "content": [
+      "lesson-5-content-1.md",
+      "lesson-5-content-2.md",
+      "lesson-5-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f748c83413887c4449cb",
+    "order": 6,
+    "name": "Investment for Retirement",
+    "description": "Choosing investments for retirement",
+    "content": [
+      "lesson-6-content-1.md",
+      "lesson-6-content-2.md",
+      "lesson-6-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f748c83413887c4449cb",
+    "order": 7,
+    "name": "Withdrawal Strategies",
+    "description": "Strategies for withdrawing funds",
+    "content": [
+      "lesson-7-content-1.md",
+      "lesson-7-content-2.md",
+      "lesson-7-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f748c83413887c4449cb",
+    "order": 8,
+    "name": "Social Security",
+    "description": "Understanding the benefits",
+    "content": [
+      "lesson-8-content-1.md",
+      "lesson-8-content-2.md",
+      "lesson-8-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f748c83413887c4449cb",
+    "order": 9,
+    "name": "Adjusting Plans",
+    "description": "Updating plans as life changes",
+    "content": [
+      "lesson-9-content-1.md",
+      "lesson-9-content-2.md",
+      "lesson-9-content-3.md"
+    ],
+    "questions": []
+  }
+]

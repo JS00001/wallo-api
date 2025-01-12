@@ -1,0 +1,98 @@
+[
+  {
+    "course": "6783f78450e84872eedd5d81",
+    "order": 1,
+    "name": "Planning Big Buys",
+    "description": "Preparing for major purchases",
+    "content": [
+      "lesson-1-content-1.md",
+      "lesson-1-content-2.md",
+      "lesson-1-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f78450e84872eedd5d81",
+    "order": 2,
+    "name": "Saving for Down Payments",
+    "description": "Building a down payment",
+    "content": [
+      "lesson-2-content-1.md",
+      "lesson-2-content-2.md",
+      "lesson-2-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f78450e84872eedd5d81",
+    "order": 3,
+    "name": "Understanding Loans",
+    "description": "Mortgage and auto loans basics",
+    "content": [
+      "lesson-3-content-1.md",
+      "lesson-3-content-2.md",
+      "lesson-3-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f78450e84872eedd5d81",
+    "order": 4,
+    "name": "Interest Impact",
+    "description": "Effect of interest on purchases",
+    "content": [
+      "lesson-4-content-1.md",
+      "lesson-4-content-2.md",
+      "lesson-4-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f78450e84872eedd5d81",
+    "order": 5,
+    "name": "Loan Approval",
+    "description": "Getting approved for a loan",
+    "content": [
+      "lesson-5-content-1.md",
+      "lesson-5-content-2.md",
+      "lesson-5-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f78450e84872eedd5d81",
+    "order": 6,
+    "name": "Negotiating Prices",
+    "description": "Getting the best deal",
+    "content": [
+      "lesson-6-content-1.md",
+      "lesson-6-content-2.md",
+      "lesson-6-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f78450e84872eedd5d81",
+    "order": 7,
+    "name": "Maintenance Costs",
+    "description": "Budgeting for upkeep",
+    "content": [
+      "lesson-7-content-1.md",
+      "lesson-7-content-2.md",
+      "lesson-7-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f78450e84872eedd5d81",
+    "order": 8,
+    "name": "Long-Term Costs",
+    "description": "Planning for the future",
+    "content": [
+      "lesson-8-content-1.md",
+      "lesson-8-content-2.md",
+      "lesson-8-content-3.md"
+    ],
+    "questions": []
+  }
+]

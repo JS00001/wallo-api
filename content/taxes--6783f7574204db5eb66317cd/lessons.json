@@ -1,0 +1,98 @@
+[
+  {
+    "course": "6783f7574204db5eb66317cd",
+    "order": 1,
+    "name": "Tax Basics",
+    "description": "Understanding tax fundamentals",
+    "content": [
+      "lesson-1-content-1.md",
+      "lesson-1-content-2.md",
+      "lesson-1-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7574204db5eb66317cd",
+    "order": 2,
+    "name": "Refunds Explained",
+    "description": "Understanding tax refunds",
+    "content": [
+      "lesson-7-content-1.md",
+      "lesson-7-content-2.md",
+      "lesson-7-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7574204db5eb66317cd",
+    "order": 3,
+    "name": "File Your Taxes",
+    "description": "Steps to file your taxes",
+    "content": [
+      "lesson-2-content-1.md",
+      "lesson-2-content-2.md",
+      "lesson-2-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7574204db5eb66317cd",
+    "order": 4,
+    "name": "Deductions vs. Credits",
+    "description": "Reducing taxable income",
+    "content": [
+      "lesson-3-content-1.md",
+      "lesson-3-content-2.md",
+      "lesson-3-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7574204db5eb66317cd",
+    "order": 5,
+    "name": "Common Mistakes",
+    "description": "Avoiding common tax errors",
+    "content": [
+      "lesson-4-content-1.md",
+      "lesson-4-content-2.md",
+      "lesson-4-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7574204db5eb66317cd",
+    "order": 6,
+    "name": "Tax Planning",
+    "description": "Planning for next year's taxes",
+    "content": [
+      "lesson-5-content-1.md",
+      "lesson-5-content-2.md",
+      "lesson-5-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7574204db5eb66317cd",
+    "order": 7,
+    "name": "Self-Employed Taxes",
+    "description": "Navigating self-employment taxes",
+    "content": [
+      "lesson-6-content-1.md",
+      "lesson-6-content-2.md",
+      "lesson-6-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7574204db5eb66317cd",
+    "order": 8,
+    "name": "Keeping Records",
+    "description": "Importance of keeping documents",
+    "content": [
+      "lesson-8-content-1.md",
+      "lesson-8-content-2.md",
+      "lesson-8-content-3.md"
+    ],
+    "questions": []
+  }
+]

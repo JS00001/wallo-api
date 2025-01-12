@@ -1,0 +1,98 @@
+[
+  {
+    "course": "6783f7296aa8548cd9d97e6a",
+    "order": 1,
+    "name": "Credit Scores",
+    "description": "What is a credit score?",
+    "content": [
+      "lesson-1-content-1.md",
+      "lesson-1-content-2.md",
+      "lesson-1-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7296aa8548cd9d97e6a",
+    "order": 2,
+    "name": "Building Credit",
+    "description": "How to build credit.",
+    "content": [
+      "lesson-2-content-1.md",
+      "lesson-2-content-2.md",
+      "lesson-2-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7296aa8548cd9d97e6a",
+    "order": 3,
+    "name": "Credit Card Use",
+    "description": "How to use credit cards.",
+    "content": [
+      "lesson-3-content-1.md",
+      "lesson-3-content-2.md",
+      "lesson-3-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7296aa8548cd9d97e6a",
+    "order": 4,
+    "name": "Loan Payments",
+    "description": "Impact of timely payments.",
+    "content": [
+      "lesson-4-content-1.md",
+      "lesson-4-content-2.md",
+      "lesson-4-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7296aa8548cd9d97e6a",
+    "order": 5,
+    "name": "Credit Reports",
+    "description": "Checking and understanding your credit report.",
+    "content": [
+      "lesson-5-content-1.md",
+      "lesson-5-content-2.md",
+      "lesson-5-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7296aa8548cd9d97e6a",
+    "order": 6,
+    "name": "Disputing Errors",
+    "description": "Correcting credit report errors.",
+    "content": [
+      "lesson-6-content-1.md",
+      "lesson-6-content-2.md",
+      "lesson-6-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7296aa8548cd9d97e6a",
+    "order": 7,
+    "name": "Improving Credit",
+    "description": "Strategies to improve credit.",
+    "content": [
+      "lesson-7-content-1.md",
+      "lesson-7-content-2.md",
+      "lesson-7-content-3.md"
+    ],
+    "questions": []
+  },
+  {
+    "course": "6783f7296aa8548cd9d97e6a",
+    "order": 8,
+    "name": "Maintaining Credit",
+    "description": "Habits for a good score.",
+    "content": [
+      "lesson-8-content-1.md",
+      "lesson-8-content-2.md",
+      "lesson-8-content-3.md"
+    ],
+    "questions": []
+  }
+]
