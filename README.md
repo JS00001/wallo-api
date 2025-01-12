@@ -31,7 +31,7 @@ yarn dev
 > [!TIP]
 > Press 'C' at any time to clear the console.
 
-## Creating new course content
+## Creating a new course
 
 Run the following command to create a new course.
 
@@ -48,6 +48,15 @@ yarn create-course
 
 > [!NOTE]
 > The course will NOT be published to the database/users until you run the `yarn publish-courses:dev/prod` command. You can read more about this below.
+
+### Creating course content
+
+- Any markdown file in content/<course>/content can be used as a 'slide' in a lesson. Each lesson takes an array of markdown files that will be displayed.
+- Markdown files can use any formatting that is supported by the markdown parser. This includes headers, lists, images, and more.
+- We offer a few special syntaxes that are non-standard markdown. These are
+  - `{definition: <term> | <definition>}`: This will create underlined text, that, when clicked, will show the definition.
+  - `{info: <text>}`: This will create a blue box with the text inside of it.
+  - `{warning: <text>}`: This will create a red box with the text inside of it.
 
 ## Publishing courses to users
 
