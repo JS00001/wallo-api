@@ -20,6 +20,7 @@
   "license": "AGPL-3.0-only",
   "packageManager": "yarn@4.6.0",
   "dependencies": {
+    "axios": "^1.7.9",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
@@ -31,6 +32,8 @@
     "form-data": "^4.0.1",
     "helmet": "^8.0.0",
     "jsonwebtoken": "^9.0.2",
+    "jwks-rsa": "^3.1.0",
+    "jwt-decode": "^4.0.0",
     "mongo-migrate-ts": "^1.6.2",
     "mongoose": "^8.9.3",
     "morgan": "^1.10.0",
