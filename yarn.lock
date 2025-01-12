@@ -7561,6 +7561,7 @@ __metadata:
     morgan: "npm:^1.10.0"
     morgan-body: "npm:^2.6.9"
     nodemon: "npm:^3.1.9"
+    picocolors: "npm:^1.1.1"
     pm2: "npm:^5.4.3"
     prettier: "npm:^3.4.2"
     ts-jest: "npm:^29.2.5"

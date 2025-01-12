@@ -18,6 +18,7 @@
   },
   "include": [
     "src/**/*",
+    "scripts/**/*",
     "jest/__mocks__/**/*"
   ],
   "exclude": ["**/__mocks__/*"],

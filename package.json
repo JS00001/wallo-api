@@ -10,7 +10,10 @@
     "build": "tsc --project tsconfig.json && tscpaths -p tsconfig.json -s src -o dist",
     "dev": "cross-env ENV_FILE=./config/.env.dev ts-node-dev --files -r tsconfig-paths/register ./src/index.ts ",
     "start:dev": "cross-env ENV_FILE=./config/.env.dev node .",
-    "start:prod": "cross-env ENV_FILE=./config/.env.prod node ."
+    "start:prod": "cross-env ENV_FILE=./config/.env.prod node .",
+    "create-course": "ts-node ./scripts/create-course.ts",
+    "publish-courses:dev": "cross-env ENV_FILE=./config/.env.dev ts-node ./scripts/publish-courses.ts",
+    "publish-courses:prod": "cross-env ENV_FILE=./config/.env.prod ts-node ./scripts/publish-courses.ts"
   },
   "author": "JS00001",
   "license": "AGPL-3.0-only",
@@ -31,6 +34,7 @@
     "mongoose": "^8.9.3",
     "morgan": "^1.10.0",
     "morgan-body": "^2.6.9",
+    "picocolors": "^1.1.1",
     "winston": "^3.17.0",
     "winston-daily-rotate-file": "^5.0.0",
     "zod": "^3.24.1"
