@@ -1,4 +1,16 @@
-### Setting up the environment
+## Sections
+
+- [Introduction](#introduction)
+- [Setting up the environment](#setting-up-the-environment)
+- [Running the application](#running-the-application)
+- [Creating new course content](#creating-new-course-content)
+- [Publishing courses to users](#publishing-courses-to-users)
+
+## Introduction
+
+Wallo is a financial education platform that allows users to learn about personal finance, investing, and other financial topics. This repository contains the code for the Wallo backend. The backend is responsible for serving the course content to the frontend, as well as handling user authentication and other backend operations.
+
+## Setting up the environment
 
 1. Install the required packages by running the following command:
 
@@ -8,9 +20,9 @@ yarn install
 
 2. Create a `config/.env.dev` and `config/.env.prod` file in the root directory. These files should match the entries of the `config/.env.schema` file.
 
-### Running the application
+## Running the application
 
-1. Run the following command to start the application in development mode:
+Run the following command to start the application in development mode:
 
 ```bash
 yarn dev
@@ -19,7 +31,7 @@ yarn dev
 > [!TIP]
 > Press 'C' at any time to clear the console.
 
-### Creating new course content
+## Creating new course content
 
 Run the following command to create a new course.
 
@@ -35,7 +47,7 @@ allows for an array of strings. These strings are relative paths to the markdown
 > [!NOTE]
 > The course will NOT be published to the database/users until you run the `yarn publish-courses:dev/prod` command. You can read more about this below.
 
-### Publishing courses to users
+## Publishing courses to users
 
 Run one of the two following commands (depending on your environment) to publish the courses to the database/users.
 
