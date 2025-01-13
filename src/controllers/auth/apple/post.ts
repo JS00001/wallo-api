@@ -3,10 +3,13 @@ import jwt from 'jsonwebtoken';
 import { Request } from 'express';
 import jwksClient from 'jwks-rsa';
 
-import { APIError, errorWrapper } from '@/lib/error';
+import apple from '@/lib/apple';
+import config from '@/constants';
+import User from '@/models/user';
 import { IResponse } from '@/lib/request';
 import validators from '@/lib/validators';
-import apple from '@/lib/apple';
+import { ISanitizedUser } from '@/models/@types';
+import { APIError, errorWrapper } from '@/lib/error';
 
 interface AppleTokenSchema {
   /** The issuer of the token */
@@ -23,11 +26,13 @@ interface AppleTokenSchema {
   email: string;
   /** Whether the email is verified */
   email_verified: boolean | 'true' | 'false';
-  /** Whether the email is a proxy email */
-  is_private_email: boolean | 'true' | 'false';
 }
 
-type Response = IResponse<{}>;
+type Response = IResponse<{
+  user: ISanitizedUser;
+  accessToken: string;
+  refreshToken: string;
+}>;
 
 /**
  * Endpoint:     POST /api/v1/auth/apple
@@ -35,9 +40,7 @@ type Response = IResponse<{}>;
  */
 export default async (req: Request): Promise<Response> => {
   const schema = z.object({
-    user: z.string(),
     identityToken: z.string(),
-    email: validators.email.nullable(),
     fullName: z
       .object({
         givenName: validators.firstName,
@@ -56,7 +59,7 @@ export default async (req: Request): Promise<Response> => {
     });
   }
 
-  const { identityToken, user, email, fullName } = params.data;
+  const { identityToken, fullName } = params.data;
 
   const header = jwt.decode(identityToken, { complete: true })?.header;
 
@@ -64,7 +67,7 @@ export default async (req: Request): Promise<Response> => {
     throw new APIError({
       type: 'INVALID_FIELDS',
       traceback: 2,
-      humanMessage: 'Invalid identity token',
+      humanMessage: 'Invalid OAuth token',
     });
   }
 
@@ -74,7 +77,7 @@ export default async (req: Request): Promise<Response> => {
     throw new APIError({
       type: 'INVALID_FIELDS',
       traceback: 3,
-      humanMessage: 'Invalid identity token',
+      humanMessage: 'Invalid OAuth token',
     });
   }
 
@@ -101,18 +104,48 @@ export default async (req: Request): Promise<Response> => {
     throw new APIError({
       type: 'INVALID_FIELDS',
       traceback: 7,
-      humanMessage: 'Invalid token issuer',
+      humanMessage: 'Invalid OAuth token',
     });
   }
 
-  console.log(decoded);
-  console.log(email, fullName, user);
+  if (decoded.aud !== config.AppBundleId) {
+    throw new APIError({
+      type: 'INVALID_FIELDS',
+      traceback: 8,
+      humanMessage: 'Invalid OAuth token',
+    });
+  }
 
-  // TODO: Add this as the app bundle id
-  // if (decoded.aud !== 'app bundle id') { }
+  const existingUser = await User.findOne({ email: decoded.email });
+
+  if (!existingUser && !fullName) {
+    throw new APIError({
+      type: 'INVALID_FIELDS',
+      traceback: 9,
+      humanMessage: 'Full name is required for new users',
+    });
+  }
+
+  const user = await errorWrapper(10, async () => {
+    if (existingUser) return existingUser;
+
+    return User.create({
+      email: decoded.email,
+      firstName: fullName?.givenName,
+      lastName: fullName?.familyName,
+    });
+  });
+
+  const sanitizedUser = user.sanitize();
+  const accessToken = await user.createAccessToken();
+  const refreshToken = await user.createRefreshToken();
 
   const response: Response = {
-    data: {},
+    data: {
+      accessToken,
+      refreshToken,
+      user: sanitizedUser,
+    },
   };
 
   return response;

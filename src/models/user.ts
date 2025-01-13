@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 
 import type { IUserMethods, UserModel, IUser, IUserSchema } from './@types';
 
+import jwt from '@/lib/jwt';
 import config from '@/constants';
 import metadata from '@/constants/metadata';
 
@@ -15,6 +16,7 @@ const userSchema = new mongoose.Schema<IUser, UserModel, IUserMethods>(
     systemRole: { type: String, enum: ['admin', 'user'], required: true },
     clientVersion: { type: String, required: false },
     refreshToken: { type: String, required: false },
+    onboarded: { type: Boolean, required: true, default: false },
 
     /** Notifications */
     notifications: {
@@ -67,6 +69,23 @@ userSchema.methods.validateRefreshToken = async function (
 };
 
 /**
+ * Create an access token for the user
+ */
+userSchema.methods.createAccessToken = async function (this: IUserSchema) {
+  return jwt.createAccessToken(this.id);
+};
+
+/**
+ * Create a refresh token for the user
+ */
+userSchema.methods.createRefreshToken = async function (this: IUserSchema) {
+  const token = jwt.createRefreshToken(this.id);
+  this.refreshToken = token;
+  await this.save();
+  return token;
+};
+
+/**
  * Sanitize
  * Remove sensitive information from user object before using it
  * Used for client-side responses
@@ -79,6 +98,7 @@ userSchema.methods.sanitize = function (this: IUserSchema) {
     email: this.email,
     systemRole: this.systemRole,
     clientVersion: this.clientVersion,
+    onboarded: this.onboarded,
     notifications: { enabled: this.notifications.enabled },
     streak: this.streak,
     virtualCurrency: this.virtualCurrency,

@@ -24,6 +24,8 @@ export interface IUser {
   clientVersion: string;
   /** The refresh token of the user */
   refreshToken: string;
+  /** Whether the user has been onboarded or not */
+  onboarded: boolean;
   /** All of the information about the user's notifications */
   notifications: {
     /** The Expo push notification tokens of the user */
@@ -72,6 +74,8 @@ export interface ISanitizedUser {
   systemRole: SystemRole;
   /** The client version that the user is currently on */
   clientVersion: string;
+  /** Whether the user has been onboarded or not */
+  onboarded: boolean;
   /** Notifications information for the user */
   notifications: {
     /** Whether the user has enabled push notifications or not */
@@ -107,6 +111,10 @@ export interface ISanitizedUser {
 export interface IUserMethods {
   /** Sanitize fields of the user and return an object that can be sent to the client */
   sanitize: () => ISanitizedUser;
+  /** Create an access token for the user */
+  createAccessToken: () => Promise<string>;
+  /** Create a refresh token for the user */
+  createRefreshToken: () => Promise<string>;
   /** Check if the passed refresh token is a valid session for the user */
   validateRefreshToken: (refreshTokenId: string) => Promise<boolean>;
 }
