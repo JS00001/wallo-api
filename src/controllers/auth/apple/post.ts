@@ -59,6 +59,7 @@ export default async (req: Request): Promise<Response> => {
 
   const { identityToken, fullName } = params.data;
 
+  // #region Validate Apple JWT
   const header = jwt.decode(identityToken, { complete: true })?.header;
 
   if (!header) {
@@ -114,6 +115,8 @@ export default async (req: Request): Promise<Response> => {
     });
   }
 
+  // #endregion
+  // #region Get the user if they exist, otherwise register them
   const existingUser = await User.findOne({ email: decoded.email });
 
   if (!existingUser && !fullName) {
@@ -134,6 +137,8 @@ export default async (req: Request): Promise<Response> => {
     });
   });
 
+  // #endregion
+  // #region Create tokens and return the user
   const sanitizedUser = user.sanitize();
   const accessToken = await user.createAccessToken();
   const refreshToken = await user.createRefreshToken();

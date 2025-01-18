@@ -1,22 +1,16 @@
-/*
- * Created on Sun Aug 20 2023
- *
- * This software is the proprietary property of CampusRush.
- * All rights reserved. Unauthorized copying, modification, or distribution
- * of this software, in whole or in part, is strictly prohibited.
- * For licensing information contact CampusRush.
- *
- * Copyright (c) 2023 CampusRush
- * Do not distribute
- */
-
 import cors from 'cors';
 import helmet from 'helmet';
 import express, { Request } from 'express';
 
 import authRouter from '@/routes/auth';
+import userRouter from '@/routes/user';
+
+import authMiddleware from '@/middleware/auth';
+import rateLimit from '@/middleware/rate-limit';
+import trackingMiddleware from '@/middleware/tracking';
 
 import trustedProxies from '@/constants/proxies';
+import { rateLimits } from '@/constants/rate-limits';
 import loggingMiddleware from '@/middleware/logging';
 import { APIError, ErrorHandler } from '@/lib/error';
 
@@ -35,8 +29,18 @@ app.get('/', (_, res) => {
   res.status(200).json({ message: 'API is running' });
 });
 
-// Routes
+// Consumer Routes without 'general' middleware. ALL routes here
+// MUST implement all of their own middleware including auth, rate limits, etc.
 app.use('/api/v1/auth', authRouter);
+
+// Consumer Routes with auth, tracking, rate limits, etc. all in one stack
+const middleware = [
+  authMiddleware.authenticateToken(),
+  trackingMiddleware.updateLastOnline,
+  rateLimit(rateLimits.default.requests, rateLimits.default.timeWindowMs),
+];
+
+app.use('/api/v1/user', middleware, userRouter);
 
 // Catch all 404 errors
 app.use((req: Request, res: express.Response) => {
