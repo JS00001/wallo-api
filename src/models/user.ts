@@ -1,7 +1,13 @@
 import bcrypt from 'bcrypt';
 import mongoose from 'mongoose';
 
-import type { IUserMethods, UserModel, IUser, IUserSchema } from './@types';
+import {
+  type IUserMethods,
+  type UserModel,
+  type IUser,
+  type IUserSchema,
+  SystemRole,
+} from './@types';
 
 import jwt from '@/lib/jwt';
 import config from '@/constants';
@@ -13,7 +19,12 @@ const userSchema = new mongoose.Schema<IUser, UserModel, IUserMethods>(
     firstName: { type: String, required: true },
     lastName: { type: String, required: true },
     email: { type: String, required: true, unique: true },
-    systemRole: { type: String, enum: ['admin', 'user'], required: true },
+    systemRole: {
+      type: String,
+      enum: SystemRole,
+      required: true,
+      default: SystemRole.User,
+    },
     clientVersion: { type: String, required: false },
     refreshToken: { type: String, required: false },
     onboarded: { type: Boolean, required: true, default: false },

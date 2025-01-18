@@ -41,12 +41,10 @@ type Response = IResponse<{
 export default async (req: Request): Promise<Response> => {
   const schema = z.object({
     identityToken: z.string(),
-    fullName: z
-      .object({
-        givenName: validators.firstName,
-        familyName: validators.lastName,
-      })
-      .nullable(),
+    fullName: z.object({
+      givenName: validators.firstName.nullable(),
+      familyName: validators.lastName.nullable(),
+    }),
   });
 
   const params = schema.safeParse(req.body);
