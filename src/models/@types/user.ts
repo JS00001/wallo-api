@@ -18,6 +18,8 @@ export interface IUser {
   lastName: string;
   /** The email of the user */
   email: string;
+  /** The age of the user */
+  age?: number;
   /** The system role of the user */
   systemRole: SystemRole;
   /** The client version that the user is currently on */
@@ -43,6 +45,8 @@ export interface IUser {
   virtualCurrency: number;
   /** How many lives the user has */
   lives: number;
+  /** The preferred courses the user wants to take */
+  preferredCourses: Types.ObjectId[];
 
   /** METADATA */
   /** The date that the user last completed a streak */

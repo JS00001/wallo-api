@@ -41,10 +41,12 @@ type Response = IResponse<{
 export default async (req: Request): Promise<Response> => {
   const schema = z.object({
     identityToken: z.string(),
-    fullName: z.object({
-      givenName: validators.firstName.nullable(),
-      familyName: validators.lastName.nullable(),
-    }),
+    fullName: z
+      .object({
+        givenName: validators.firstName.nullable(),
+        familyName: validators.lastName.nullable(),
+      })
+      .nullable(),
   });
 
   const params = schema.safeParse(req.body);
@@ -119,7 +121,7 @@ export default async (req: Request): Promise<Response> => {
   // #region Get the user if they exist, otherwise register them
   const existingUser = await User.findOne({ email: decoded.email });
 
-  if (!existingUser && !fullName) {
+  if (!existingUser && (!fullName?.givenName || !fullName?.familyName)) {
     throw new APIError({
       type: 'INVALID_FIELDS',
       traceback: 9,

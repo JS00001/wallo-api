@@ -1,5 +1,5 @@
 import bcrypt from 'bcrypt';
-import mongoose from 'mongoose';
+import mongoose, { Schema } from 'mongoose';
 
 import {
   type IUserMethods,
@@ -19,6 +19,7 @@ const userSchema = new mongoose.Schema<IUser, UserModel, IUserMethods>(
     firstName: { type: String, required: true },
     lastName: { type: String, required: true },
     email: { type: String, required: true, unique: true },
+    age: { type: Number, required: false },
     systemRole: {
       type: String,
       enum: SystemRole,
@@ -39,6 +40,12 @@ const userSchema = new mongoose.Schema<IUser, UserModel, IUserMethods>(
     streak: { type: Number, required: false, default: 0 },
     virtualCurrency: { type: Number, required: false, default: 0 },
     lives: { type: Number, required: false, default: metadata.defaultLives },
+    preferredCourses: {
+      type: [Schema.Types.ObjectId],
+      ref: 'Course',
+      required: false,
+      default: [],
+    },
     weekData: {
       type: [Boolean],
       required: false,
@@ -59,6 +66,7 @@ const userSchema = new mongoose.Schema<IUser, UserModel, IUserMethods>(
  */
 userSchema.pre<IUserSchema>('save', function (next) {
   if (!this.isModified('refreshToken')) return next();
+  if (!this.refreshToken) return next();
 
   bcrypt.hash(this.refreshToken, config.SaltFactor, (err, hash) => {
     if (err) return next(err);
@@ -75,6 +83,7 @@ userSchema.methods.validateRefreshToken = async function (
   this: IUserSchema,
   refreshToken: string,
 ) {
+  if (!this.refreshToken) return false;
   const isEqual = await bcrypt.compare(refreshToken, this.refreshToken);
   return isEqual;
 };

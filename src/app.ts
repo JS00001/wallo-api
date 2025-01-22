@@ -4,6 +4,7 @@ import express, { Request } from 'express';
 
 import authRouter from '@/routes/auth';
 import userRouter from '@/routes/user';
+import coursesRouter from '@/routes/courses';
 
 import authMiddleware from '@/middleware/auth';
 import rateLimit from '@/middleware/rate-limit';
@@ -41,6 +42,7 @@ const middleware = [
 ];
 
 app.use('/api/v1/user', middleware, userRouter);
+app.use('/api/v1/courses', middleware, coursesRouter);
 
 // Catch all 404 errors
 app.use((req: Request, res: express.Response) => {

@@ -76,8 +76,7 @@ export default async (
     /** Verify refresh tokens */
     if (tokenType === TokenType.Refresh) {
       const isRefreshTokenValid = await errorWrapper(5, () => {
-        const token = payload['refreshTokenId'];
-        return user.validateRefreshToken(token);
+        return user.validateRefreshToken(authToken);
       });
 
       if (!isRefreshTokenValid) {

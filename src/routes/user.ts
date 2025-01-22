@@ -6,6 +6,9 @@ import userController from '@/controllers/user';
 const userRouter = express.Router();
 
 /** Get the currently signed in user */
-userRouter.post('/', userController.getUser);
+userRouter.get('/', userController.getUser);
+
+/** Update the currently signed in user */
+userRouter.put('/', userController.putUser);
 
 export default userRouter;
