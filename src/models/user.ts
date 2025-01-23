@@ -40,6 +40,8 @@ const userSchema = new mongoose.Schema<IUser, UserModel, IUserMethods>(
     streak: { type: Number, required: false, default: 0 },
     virtualCurrency: { type: Number, required: false, default: 0 },
     lives: { type: Number, required: false, default: metadata.defaultLives },
+    claimedDailyReward: { type: Boolean, required: false, default: false },
+    dailyLessonCount: { type: Number, required: false, default: 0 },
     preferredCourses: {
       type: [Schema.Types.ObjectId],
       ref: 'Course',
@@ -124,6 +126,8 @@ userSchema.methods.sanitize = function (this: IUserSchema) {
     virtualCurrency: this.virtualCurrency,
     lives: this.lives,
     weekData: this.weekData,
+    claimedDailyReward: this.claimedDailyReward,
+    dailyLessonCount: this.dailyLessonCount,
     lastStreakAt: this.lastStreakAt,
     lastLivesAt: this.lastLivesAt,
     lastOnlineAt: this.lastOnlineAt,

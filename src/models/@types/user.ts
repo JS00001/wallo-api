@@ -47,6 +47,10 @@ export interface IUser {
   lives: number;
   /** The preferred courses the user wants to take */
   preferredCourses: Types.ObjectId[];
+  /** Whether they claimed the daily reward */
+  claimedDailyReward: boolean;
+  /** The number of lessons that a user has completed for the day */
+  dailyLessonCount: number;
 
   /** METADATA */
   /** The date that the user last completed a streak */
@@ -95,6 +99,10 @@ export interface ISanitizedUser {
   virtualCurrency: number;
   /** How many lives the user has */
   lives: number;
+  /** Whether they claimed the daily reward */
+  claimedDailyReward: boolean;
+  /** The number of lessons that a user has completed for the day */
+  dailyLessonCount: number;
 
   /** METADATA */
   /** The date that the user last completed a streak */

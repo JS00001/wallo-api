@@ -19,6 +19,7 @@ export interface ILessonProgress {
   completed: boolean;
   /** Whether the lesson is locked */
   locked: boolean;
+  /** User's progress on the lesson */
   contentProgress: {
     /** The index of the content that the user has reached */
     index: number;

@@ -63,6 +63,7 @@ export default async (req: Request): Promise<Response> => {
   // #endregion
   // #region Save User and return sanitized user
   await errorWrapper(3, () => {
+    user.onboarded = true;
     return user.save();
   });
 
