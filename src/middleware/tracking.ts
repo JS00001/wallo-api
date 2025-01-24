@@ -15,12 +15,13 @@ const updateLastOnline = async (
 ) => {
   try {
     const user = req.user!;
+    const clientTimezone = req.headers['x-timezone'] as string | undefined;
     const clientVersion = req.headers['x-client-version'] as string | undefined;
 
     const currentTimeMillis = new Date().getTime();
     const lastOnlineTimeMillis = user.lastOnlineAt.getTime();
 
-    // Update the 'last online' time if needed
+    // #region Update last online time, if needed
     const shouldUpdateLastOnline =
       lastOnlineTimeMillis + REFRESH_RATE_MS < currentTimeMillis;
 
@@ -28,7 +29,8 @@ const updateLastOnline = async (
       user.lastOnlineAt = new Date();
     }
 
-    // Update the client version if needed
+    // #endregion
+    // #region Update timezone, if needed
     const shouldUpdateClientVersion =
       clientVersion && user.clientVersion !== clientVersion;
 
@@ -36,13 +38,26 @@ const updateLastOnline = async (
       user.clientVersion = clientVersion;
     }
 
-    // Save the user if needed
-    const shouldSaveUser = shouldUpdateClientVersion || shouldUpdateLastOnline;
+    // #endregion
+    // #region Update timezone, if needed
+    const shouldUpdateTimezone = clientTimezone && !user.timezone;
+
+    if (shouldUpdateTimezone) {
+      user.timezone = clientTimezone;
+    }
+
+    // #endregion
+    // #region Save user, if needed
+    const shouldSaveUser =
+      shouldUpdateClientVersion ||
+      shouldUpdateLastOnline ||
+      shouldUpdateTimezone;
 
     if (shouldSaveUser) {
       await user.save();
     }
 
+    // #endregion
     next();
   } catch (err) {
     const errorHandler = new ErrorHandler({

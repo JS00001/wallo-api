@@ -13,7 +13,7 @@ const startJobs = () => {
   cron.schedule('0 18 * * *', dailyReminder);
 
   // Every day at 12:00am - Reset daily rewards and update expired streaks
-  cron.schedule('0 0 * * *', async () => {
+  cron.schedule('0 * * * *', async () => {
     // Update streaks first because we rely on data from daily challenges that
     // get cleared in resetChallenges
     await updateStreaks();

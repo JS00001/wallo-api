@@ -26,6 +26,7 @@ const userSchema = new mongoose.Schema<IUser, UserModel, IUserMethods>(
       required: true,
       default: SystemRole.User,
     },
+    timezone: { type: String, required: false },
     clientVersion: { type: String, required: false },
     refreshToken: { type: String, required: false },
     onboarded: { type: Boolean, required: true, default: false },
