@@ -24,6 +24,7 @@ export interface IUser {
   systemRole: SystemRole;
   /** The client version that the user is currently on */
   clientVersion: string;
+
   /** The refresh token of the user */
   refreshToken?: string;
   /** Whether the user has been onboarded or not */

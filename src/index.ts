@@ -1,4 +1,5 @@
 import app from '@/app';
+import cron from '@/cron';
 import config from '@/constants';
 import database from '@/database';
 import logger from '@/lib/logger';
@@ -7,17 +8,23 @@ import logger from '@/lib/logger';
  * Sequence of events:
  * 1. Connect to the database
  * 2. Start the http server
- * 3. If in dev env, create a listener for keypresses to restart the server
+ * 3. Start the cron jobs
+ * 4. If in dev env, create a listener for keypresses to restart the server
  */
 
 database.connect().then(async () => {
   /**
    * Start the http server on the specified port and env
    */
-  const httpServer = app.listen(config.Port, async () => {
+  app.listen(config.Port, async () => {
     logger.info(`Server environment: ${config.NodeEnv}`);
     logger.info(`Server listening on port: ${config.Port}`);
   });
+
+  /**
+   * Start the cron jobs for the application to run
+   */
+  cron.startJobs();
 
   /**
    * If we are in a dev env, we want to be able to clear the console by
