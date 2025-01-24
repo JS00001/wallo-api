@@ -4,6 +4,7 @@ import resetChallenges from './jobs/reset-challenges';
 import updateStreaks from './jobs/update-streaks';
 import dailyReminder from './jobs/daily-reminder';
 import regenerateLives from './jobs/regenerate-lives';
+import clearWeekData from './jobs/clear-week-data';
 
 const startJobs = () => {
   // Every 2 hours - Regenerate lives to full
@@ -19,6 +20,9 @@ const startJobs = () => {
     await updateStreaks();
     await resetChallenges();
   });
+
+  // Every hour of Sundays - Reset week's streak data
+  cron.schedule('0 * * * 0', clearWeekData);
 };
 
 export default { startJobs };
