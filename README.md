@@ -1,3 +1,7 @@
+## Introduction
+
+Wallo is a financial education platform that allows users to learn about personal finance, investing, and other financial topics. This repository contains the code for the Wallo backend. The backend is responsible for serving the course content to the frontend, as well as handling user authentication and other backend operations.
+
 ## Documentation Sections
 
 - [Introduction](#introduction)
@@ -5,10 +9,6 @@
 - [Running the application](#running-the-application)
 - [Creating new course content](#creating-new-course-content)
 - [Publishing courses to users](#publishing-courses-to-users)
-
-## Introduction
-
-Wallo is a financial education platform that allows users to learn about personal finance, investing, and other financial topics. This repository contains the code for the Wallo backend. The backend is responsible for serving the course content to the frontend, as well as handling user authentication and other backend operations.
 
 ## Setting up the environment
 

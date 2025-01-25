@@ -5,6 +5,12 @@ export enum SystemRole {
   User = 'user',
 }
 
+export enum Reward {
+  Daily = 'Daily',
+  OneLesson = 'OneLesson',
+  ThreeLessons = 'ThreeLessons',
+}
+
 /**
  * All internal fields stored about a user
  */
@@ -50,7 +56,7 @@ export interface IUser {
   /** The preferred courses the user wants to take */
   preferredCourses: Types.ObjectId[];
   /** Whether they claimed the daily reward */
-  claimedDailyReward: boolean;
+  claimedDailyRewards: Reward[];
   /** The number of lessons that a user has completed for the day */
   dailyLessonCount: number;
 
@@ -102,7 +108,7 @@ export interface ISanitizedUser {
   /** How many lives the user has */
   lives: number;
   /** Whether they claimed the daily reward */
-  claimedDailyReward: boolean;
+  claimedDailyRewards: Reward[];
   /** The number of lessons that a user has completed for the day */
   dailyLessonCount: number;
 

@@ -24,7 +24,7 @@ const resetChallenges = async () => {
   // Update the daily challenges for only the users whose current time is midnight
   const response = await User.updateMany(
     { _id: { $in: usersToUpdate } },
-    { $set: { dailyLessonCount: 0, claimedDailyReward: false } },
+    { $set: { dailyLessonCount: 0, claimedDailyRewards: [] } },
   );
 
   const count = response.modifiedCount;
