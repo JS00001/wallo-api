@@ -15,10 +15,6 @@ export interface ILessonProgress {
   user: Types.ObjectId;
 
   /** PROGRESS DATA */
-  /** Whether the user has completed the lesson */
-  completed: boolean;
-  /** Whether the lesson is locked */
-  locked: boolean;
   /** User's progress on the lesson */
   contentProgress: {
     /** The index of the content that the user has reached */

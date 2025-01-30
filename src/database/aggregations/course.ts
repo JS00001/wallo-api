@@ -68,9 +68,10 @@ const queryCourses = async (
       },
     },
     // #endregion
-    // #region Remove the priorityLesson field that was used for sorting
+    // #region Remove the priorityLesson field that was used for sorting and lessons
     {
       $project: {
+        lessons: 0,
         priorityLesson: 0,
       },
     },

@@ -15,9 +15,6 @@ const lessonProgressSchema = new mongoose.Schema<ILessonProgress>(
       required: true,
     },
     user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
-
-    completed: { type: Boolean, default: false },
-    locked: { type: Boolean, default: true },
     contentProgress: {
       index: { type: Number, default: 0 },
       time: { type: Date, default: Date.now },

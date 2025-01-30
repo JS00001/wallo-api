@@ -3,6 +3,7 @@ import cron from '@/cron';
 import config from '@/constants';
 import database from '@/database';
 import logger from '@/lib/logger';
+import jwt from './lib/jwt';
 
 /**
  * Sequence of events:

@@ -48,5 +48,19 @@ export interface ILesson {
   updatedAt: Date;
 }
 
+/**
+ * The lesson once populated and aggregated for a user
+ */
+export interface IPopulatedLesson extends ILesson {
+  /** Whether the user has completed the lesson */
+  completed: boolean;
+  /** Whether the lesson is locked from starting */
+  locked: boolean;
+  /** The progress of the user in that lesson */
+  progress: number;
+  /** The total progress possible in that lesson */
+  total: number;
+}
+
 // The methods and properties for a fetched document. This will be the most commonly used type
 export type ILessonSchema = HydratedDocument<ILesson>;
