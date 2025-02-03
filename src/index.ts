@@ -3,13 +3,14 @@ import cron from '@/cron';
 import config from '@/constants';
 import database from '@/database';
 import logger from '@/lib/logger';
-import jwt from './lib/jwt';
+import { cacheContent } from '@/lib/cache/file-cache';
 
 /**
  * Sequence of events:
  * 1. Connect to the database
  * 2. Start the http server
  * 3. Start the cron jobs
+ * 4. Load all of the course content into memory for faster access
  * 4. If in dev env, create a listener for keypresses to restart the server
  */
 
@@ -26,6 +27,11 @@ database.connect().then(async () => {
    * Start the cron jobs for the application to run
    */
   cron.startJobs();
+
+  /**
+   * Load all of the course content into memory for faster access
+   */
+  cacheContent();
 
   /**
    * If we are in a dev env, we want to be able to clear the console by

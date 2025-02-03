@@ -21,6 +21,4 @@ class Cache {
   }
 }
 
-const fileCache = new Cache();
-
-export { fileCache };
+export default Cache;

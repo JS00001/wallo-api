@@ -6,6 +6,7 @@ import authRouter from '@/routes/auth';
 import userRouter from '@/routes/user';
 import rewardsRouter from '@/routes/rewards';
 import coursesRouter from '@/routes/courses';
+import lessonsRouter from '@/routes/lessons';
 
 import authMiddleware from '@/middleware/auth';
 import rateLimit from '@/middleware/rate-limit';
@@ -44,6 +45,7 @@ const middleware = [
 
 app.use('/api/v1/user', middleware, userRouter);
 app.use('/api/v1/courses', middleware, coursesRouter);
+app.use('/api/v1/lessons', middleware, lessonsRouter);
 app.use('/api/v1/rewards', middleware, rewardsRouter);
 
 // Catch all 404 errors
