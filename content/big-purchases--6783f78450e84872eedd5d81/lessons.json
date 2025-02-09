@@ -10,7 +10,74 @@
       "lesson-1-content-2.md",
       "lesson-1-content-3.md"
     ],
-    "questions": []
+    "questions": [
+      {
+        "question": "This is question 1",
+        "type": "single",
+        "answers": [
+          {
+            "answer": "Answer 1 (Correct)",
+            "correct": true
+          },
+          {
+            "answer": "Answer 2",
+            "correct": false
+          },
+          {
+            "answer": "Answer 3",
+            "correct": false
+          },
+          {
+            "answer": "Answer 4",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "This is question 2",
+        "type": "multiple",
+        "answers": [
+          {
+            "answer": "Answer 1 (Correct)",
+            "correct": true
+          },
+          {
+            "answer": "Answer 2 (Correct)",
+            "correct": true
+          },
+          {
+            "answer": "Answer 3",
+            "correct": false
+          },
+          {
+            "answer": "Answer 4",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "question": "This is question 3",
+        "type": "single",
+        "answers": [
+          {
+            "answer": "Answer 1",
+            "correct": false
+          },
+          {
+            "answer": "Answer 2",
+            "correct": false
+          },
+          {
+            "answer": "Answer 3 (Correct)",
+            "correct": true
+          },
+          {
+            "answer": "Answer 4",
+            "correct": false
+          }
+        ]
+      }
+    ]
   },
   {
     "_id": "678403f7dd4c11a5548ce426",

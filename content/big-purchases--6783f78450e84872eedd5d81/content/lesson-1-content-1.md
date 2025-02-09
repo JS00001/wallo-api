@@ -1,4 +1,4 @@
-## This is Lesson 1 Content 2
+## This is Lesson 1 Content 1
 
 Welcome to content about preparing for major purchases.
 Here is a {definition: big buy | A major purchase that requires a significant amount of money.}.
